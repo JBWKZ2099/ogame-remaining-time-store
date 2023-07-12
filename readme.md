@@ -3,8 +3,8 @@
 
 
 ## Images
-[Screeshot1](https://raw.githubusercontent.com/JBWKZ2099/ogame-remaining-time-store/master/screenshots/v1.0.0(down_icon).png)
-[Screeshot2](https://raw.githubusercontent.com/JBWKZ2099/ogame-remaining-time-store/master/screenshots/v1.0.0(tooltip).png)
+<img src="https://raw.githubusercontent.com/JBWKZ2099/ogame-remaining-time-store/master/screenshots/v1.0.0(down_icon).png" alt="v1.0.0(down_icon)">
+<img src="https://raw.githubusercontent.com/JBWKZ2099/ogame-remaining-time-store/master/screenshots/v1.0.0(tooltip).png" alt="v1.0.0(tooltip)">
 
 
 ## Spanish
