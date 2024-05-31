@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         OGame Redesign: Remaining Time Store
 // @namespace    remaining_time_store
-// @version      1.0.0
+// @version      1.0.1
 // @description  Displays remaining time to fill each store (metal, crystal, deuterium).
 // @author       JBWKZ2099
 // @homepageURL  https://github.com/JBWKZ2099/ogame-warehouse-remaining-time

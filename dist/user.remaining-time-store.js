@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         OGame Redesign: Remaining Time Store
 // @namespace    remaining_time_store
-// @version      1.0.0
+// @version      1.0.1
 // @description  Displays remaining time to fill each store (metal, crystal, deuterium).
 // @author       JBWKZ2099
 // @homepageURL  https://github.com/JBWKZ2099/ogame-warehouse-remaining-time
@@ -293,7 +293,7 @@
         var time = 0;
         var title = "";
         var pattern_match=/\">(.*?)<\/span/gi;
-        var box_content = $(`#${type}_box`).attr("title").match(pattern_match);
+        var box_content = $(`#${type}_box`).attr("data-tooltip-title").match(pattern_match);
         box_content[0] = $(`#resources_${type}`).attr("data-raw");
 
         for(i in box_content)
@@ -397,7 +397,7 @@
                     }
 
                     if( settings.position=="0" ) {
-                        title = $("#metal_box").attr("title");
+                        title = $("#metal_box").attr("data-tooltip-title");
                         title = title.replace("</table>", "<tr class='tr-dynamic-metal'><th><b>Tiempo restante:</b></th><td><center class='force_color1'>"+remaining_time+"</center></td></tr></table>");
                         removeTooltip( $("#metal_box") );
                         $("#metal_box").attr("title", title);
@@ -430,7 +430,7 @@
                     }
 
                     if( settings.position=="0" ) {
-                        title = $("#crystal_box").attr("title");
+                        title = $("#crystal_box").attr("data-tooltip-title");
                         title = title.replace("</table>", "<tr class='tr-dynamic-crystal'><th><b>Tiempo restante:</b></th><td><center class='force_color2'>"+remaining_time+"</center></td></tr></table>");
                         removeTooltip( $("#crystal_box") );
                         $("#crystal_box").attr("title", title);
@@ -462,7 +462,7 @@
                     }
 
                     if( settings.position=="0" ) {
-                        title = $("#deuterium_box").attr("title");
+                        title = $("#deuterium_box").attr("data-tooltip-title");
                         title = title.replace("</table>", "<tr class='tr-dynamic-deuterium'><th><b>Tiempo restante:</b></th><td><center class='force_color3'>"+remaining_time+"</center></td></tr></table>");
                         removeTooltip( $("#deuterium_box") );
                         $("#deuterium_box").attr("title", title);
